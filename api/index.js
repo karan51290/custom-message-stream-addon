@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
     streams: [
       {
         title: "⚠️Please Contact Your Service Provider to renew⚠️",
-        //externalUrl: "https://youtube.com/watch?v=YOUR_VIDEO_ID"
+        externalUrl: "https://youtube.com/watch?v=YOUR_VIDEO_ID"
       }
     ]
   });
