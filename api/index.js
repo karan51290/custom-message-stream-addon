@@ -6,10 +6,10 @@ module.exports = async (req, res) => {
   // Manifest
   if (path.includes("manifest.json")) {
     return res.json({
-      id: "org.miglanis.fallback",
+      id: "org.premiumzone.fallback",
       version: "1.0.0",
-      name: "Fallback Message",
-      description: "Shows a message when no streams are available",
+      name: "Subscription Expired Message",
+      description: "Shows a Subscription Expired Message",
       resources: ["stream"],
       types: ["movie", "series"],
       idPrefixes: [""]
@@ -20,7 +20,7 @@ module.exports = async (req, res) => {
   return res.json({
     streams: [
       {
-        title: "⚠️Please Contact Your Service Provider to renew⚠️",
+        title: "⚠️Please Contact Your Service Provider to renew Subscription⚠️",
         externalUrl: "https://youtube.com/watch?v=YOUR_VIDEO_ID"
       }
     ]
